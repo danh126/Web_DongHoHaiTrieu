@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteBase /Web_HaiTrieu/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+#RewriteRule ^(.*)(/([a-z\-]+).html)?$ index.php/$1
